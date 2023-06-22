@@ -1,0 +1,78 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+font-family: 'Poppins', sans-serif;
+body {
+    background: hsl(0, 0%, 86%);
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    margin: 4em 1em;
+    padding: 2em 1em;
+    background: hsl(0, 0%, 94%);
+}
+form {
+    display: flex;
+    gap: 2em;
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    font-size: .7em;
+    font-weight: 600;
+    letter-spacing: .3em;
+}
+
+.error label {
+    color: hsl(0, 100%, 67%);
+}
+
+ .input {
+    display: block;
+    width: 100%;
+    padding: .9em;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    margin-top: .5em;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    
+} 
+.input:focus {
+    outline: none;
+    border: 1px solid hsl(259, 100%, 65%);
+    font-weight: 900;
+    font-size: 1rem;
+   
+}
+.error .input {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+.error .msg {
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    font-size: .9em;
+}
+
+hr {
+    margin-top: 3em;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+
+ .img {
+    position: relative;
+    top: -1.5em;
+    max-width: 100%;
+    width: 50px;
+    border-radius: 100%;
+    background-color: hsl(259, 100%, 65%);
+    margin: 0 auto;
+}
