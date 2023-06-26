@@ -7,7 +7,39 @@
     <title>Age calculator</title>
 </head>
 <body>
-    
+    <div class="container">
+        <form action="" class="form">
+            <div class="flex">
+                <div class="day">
+                    <label for="day" class="label">DAY</label>
+                    <input type="text" id="day" minlength="1" maxlength="2" placeholder="DD"
+                    class="input">
+                    <p></p>
+                </div>
+                <div class="month">
+                    <label for="month" class="label">MONTH</label>
+                    <input type="text" id="month" minlength="1" maxlength="2" placeholder="MM"
+                    class="input">
+                    <p></p>
+                </div>
+                <div class="year">
+                    <label for="year" class="label">YEAR</label>
+                    <input type="text" id="year" minlength="4" maxlength="4" placeholder="YYYY"
+                    class="input">
+                    <p></p>
+                </div>
+            </div>
+            <div class="lower">
+                <hr>
+                <button class="btn" type="submit">
+                    <img src="img/icon-arrow.svg" alt="arrow facing down">
+                </button>
+            </div>
+        </form>
+        <div>
+            <h1 class="result"></h1>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
