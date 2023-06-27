@@ -30,9 +30,12 @@ body {
 .label {
     font-size: .6rem;
     color: hsl(0, 1%, 44%);
-    font-weight: 700;
+    font-weight: 900;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .4em;
+}
+.error .label {
+    color: hsl(0, 100%, 67%);
 }
 .input {
     margin-top: .5em;
@@ -46,7 +49,7 @@ body {
     outline: none;
 }
 .error .input {
-    border: 1px solid red;
+    border: 1px solid hsl(0, 100%, 67%);
 }
 .lower {
     text-align: center;
@@ -61,5 +64,11 @@ body {
     top: -1.8em;
 }
 .error p {
-    color: red;
+    color: hsl(0, 100%, 67%);
+    font-size: .7rem;
+    font-style: italic;
+}
+
+.success input {
+    border: 1px solid green;
 }
