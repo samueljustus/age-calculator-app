@@ -8,38 +8,41 @@
 </head>
 <body>
     <div class="container">
-        <form action="" class="form">
-            <div class="flex">
+        <form action="#" class="form">
+            <fieldset class="flex">
+                <legend class="visually-hidden">Date of Birth</legend>
                 <div class="day">
-                    <label for="day" class="label">DAY</label>
+                    <label for="day" class="label">day</label>
                     <input type="text" id="day" minlength="1" maxlength="2" placeholder="DD"
                     class="input">
-                    <p></p>
+                    <p aria-live="polite"></p>
                 </div>
                 <div class="month">
-                    <label for="month" class="label">MONTH</label>
+                    <label for="month" class="label">month</label>
                     <input type="text" id="month" minlength="1" maxlength="2" placeholder="MM"
                     class="input">
-                    <p></p>
+                    <p aria-live="polite"></p>
                 </div>
                 <div class="year">
-                    <label for="year" class="label">YEAR</label>
+                    <label for="year" class="label">year</label>
                     <input type="text" id="year" minlength="4" maxlength="4" placeholder="YYYY"
                     class="input">
-                    <p></p>
+                    <p aria-live="polite"></p>
                 </div>
-            </div>
+            </fieldset>
             <div class="lower">
                 <hr>
                 <button class="btn" type="submit">
-                    <img src="img/icon-arrow.svg" alt="arrow facing down">
+                    <img src="img/icon-arrow.svg" alt="an arrow pointing downwards that helps 
+                    calculate age">
                 </button>
             </div>
         </form>
-        <div>
-            <h1 class="result"></h1>
+        <div aria-live="polite">
+            <p class="result"></p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

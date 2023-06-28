@@ -26,6 +26,16 @@ body {
     display: flex;
     gap: 1em;
     margin-bottom: 3em;
+    border: none;
+}
+.visually-hidden { 
+    position: absolute;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); 
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }
 .label {
     font-size: .6rem;
@@ -33,6 +43,7 @@ body {
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .4em;
+    text-transform: uppercase;
 }
 .error .label {
     color: hsl(0, 100%, 67%);
