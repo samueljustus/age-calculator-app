@@ -75,11 +75,25 @@ body {
     top: -1.8em;
 }
 .error p {
+    display: block;
     color: hsl(0, 100%, 67%);
     font-size: .7rem;
     font-style: italic;
 }
-
 .success input {
-    border: 1px solid green;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+.success p {
+    display: none;
+}
+.output {
+    margin-top: 1em;
+}
+span {
+    color: hsl(259, 100%, 65%);
+}
+.result {
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
 }

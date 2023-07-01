@@ -14,19 +14,19 @@
                 <div class="day">
                     <label for="day" class="label">day</label>
                     <input type="text" id="day" minlength="1" maxlength="2" placeholder="DD"
-                    class="input">
+                    class="input" oninput="validateInput(this)">
                     <p aria-live="polite"></p>
                 </div>
                 <div class="month">
                     <label for="month" class="label">month</label>
                     <input type="text" id="month" minlength="1" maxlength="2" placeholder="MM"
-                    class="input">
+                    class="input"  oninput="validateInput(this)">
                     <p aria-live="polite"></p>
                 </div>
                 <div class="year">
                     <label for="year" class="label">year</label>
                     <input type="text" id="year" minlength="4" maxlength="4" placeholder="YYYY"
-                    class="input">
+                    class="input"  oninput="validateInput(this)">
                     <p aria-live="polite"></p>
                 </div>
             </fieldset>
@@ -38,8 +38,10 @@
                 </button>
             </div>
         </form>
-        <div aria-live="polite">
-            <p class="result"></p>
+        <div aria-live="polite" class="output">
+            <p class="result year"><span id="yy">--</span>years</p>
+            <p class="result month"><span id="mm">--</span>months</p>
+            <p class="result day"><span id="dd">--</span>days</p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
