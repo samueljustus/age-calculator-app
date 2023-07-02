@@ -22,5 +22,29 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
   ### Links
-  - Solution URL: 
+  - Solution URL: https://github.com/samueljustus/age-calculator-app
 - Live Site URL: https://samueljustus.github.io/age-calculator-app/
+
+  ## My process
+  i started off with writting the html and css then i added javascript.i wrote a function to calculate the age of the user
+  then i added media queriies to make it responsve
+
+   ### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- javascrpt
+- Mobile-first workflow
+
+### What I learned
+working with dates can be so tricky so i learned how to work with dates and how to validate the dates based on the input of the user 
+and then i learnt how to calculate the ages of the user.
+
+### Continued development
+i'm not fully comfortable with working with dates so i'll continue to improve on that aspect as i learn more. and then i'll pick up
+a date library called dayjs.
+
+## Author
+- Frontend Mentor - [@samueljustus](https://www.frontendmentor.io/profile/samueljustus)
+- Twitter - [@samueljustus_](https://www.twitter.com/samueljustus_)
