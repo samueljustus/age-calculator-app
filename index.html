@@ -13,13 +13,13 @@
                 <legend class="visually-hidden">Date of Birth</legend>
                 <div class="day">
                     <label for="day" class="label">day</label>
-                    <input type="text" id="day" minlength="1" maxlength="2" placeholder="DD"
+                    <input type="number" id="day" min="1" max="31" placeholder="DD"
                     class="input">
                     <p aria-live="polite"></p>
                 </div>
                 <div class="month">
                     <label for="month" class="label">month</label>
-                    <input type="text" id="month" minlength="1" maxlength="2" placeholder="MM"
+                    <input type="number" id="month" min="1" max="12" placeholder="MM"
                     class="input">
                     <p aria-live="polite"></p>
                 </div>
@@ -45,6 +45,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
